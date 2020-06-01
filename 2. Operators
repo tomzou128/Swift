@@ -1,0 +1,13 @@
+## Nil Coalescing Operator
+```a ?? b``` can check if a is nil, if ```a``` has a value, it will return ```a``` 's value, else return value from ```b```. ```a``` must be Optional type. </br>
+Nil Coalescing Operaotor equals to 
+```swift
+a != nil ? a! : b
+```
+Example
+```swift
+let defaultColorName = "red"
+var userDefinedColorName: String?   //currently nil
+
+var colorNameToUse = userDefinedColorName ?? defaultColorName
+```
