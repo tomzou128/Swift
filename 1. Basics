@@ -1,0 +1,38 @@
+## Assert and Precondition
+Assert and Precondition are used to stop the program when a condition is not fulfilled (usually due to error).
+
+*Assert*
+The line will stop the whole program if ```age >= 0``` is false, and show the text in terminal. Assert only works when optimization level is 'No'.
+```swift
+let age = -3
+assert(age >= 0, "Error, age negative")
+```
+</br>
+
+*Assert failure*
+This is used when you have already checked the condition and just want to stop the program.
+```swift
+if age > 10 {
+    print("You can ride the roller-coaster or the ferris wheel.")
+} else if age > 0 {
+    print("You can ride the ferris wheel.")
+} else {
+    assertionFailure("A person's age can't be less than zero.")
+}
+```
+</br>
+
+*Precondition*
+Similar to Assert, it also has ```precondition failure``` function. </br>
+Different to Assert, precondition will run under all optimization level other then 'Ouncheced'.
+```swift
+let age = -3
+precondition(age >= 0, "Error, age negative")
+```
+</br>
+
+*fatalError*
+Just want to stop the program.
+```swift
+fatalError("Unimplemented")
+```
