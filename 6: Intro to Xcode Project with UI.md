@@ -1,30 +1,6 @@
-# Intro to Playground with UI
+# 6: Intro to Xcode Project with UI
 
-## Default code in Xcode
-```loadView()``` defines the layout of the screen. 
-```swift
-import UIKit
-import PlaygroundSupport
-
-class MyViewController : UIViewController {
-    override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .white
-
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        
-        view.addSubview(label)
-        self.view = view
-    }
-}
-// Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
-```
-
-## Define a layout
+## Playground: Define a layout
 
 ```swift
 import Foundation
@@ -64,17 +40,26 @@ public class GameViewController: UIViewController {
 }
 ```
 
+## Storyboard tips
+Make use of Auto-layout. Put objects which are in the same category into a stack view. The key part is to have use layer concept to building the whole thing.
 
-# Intro to Xcode project with UI
+<br>
 
-## 1. Setup a Xcode project
+## Image tips
+We can put a list of images into the a list in class, so that we can use the list element directly. Type 'image literal', then press 'enter', we can select images directly.
+<br>
+
+
+
+## Xcode project: journey to the West
+
+### 1. Setup a Xcode project
 1. Choose 'ios', 'single view', and 'story board' as the user interface. <br>
 
-## 2. Setup storyboard
+### 2. Setup storyboard
 In ```main.storyboard``` page, you can drag and drop anything you want to put into the page. <br>
 
-
-### Objects in page 1
+#### Objects in page 1
 Image 1: <br>
 Constraints: top, left, right and height. <br>
 Label 1: <br>
@@ -88,7 +73,7 @@ Note that Label 2 doesn't fix its height, because we don't know its height on ev
 
 
 
-### Objects in page 2
+#### Objects in page 2
 Image 1: <br>
 Constraints: top, horizontally in container, width and height. <br>
 View 1: <br>
@@ -97,8 +82,6 @@ Constraints: top, left, horizontally in container and height. <br>
 Therefore, we either have **left distance fixed with horizontally in container**, or **a fixed width with horiontally in container**.
 <br><br>
 
-## Image tips
-We can put a list of images into the a list in class, so that we can use the list element directly. Type 'image literal', then press 'enter', we can select images directly.
-<br>
+
 
 
