@@ -95,5 +95,10 @@ View 1: <br>
 Constraints: top, left, horizontally in container and height. <br>
 
 Therefore, we either have **left distance fixed with horizontally in container**, or **a fixed width with horiontally in container**.
+<br><br>
+
+## Image tips
+We can put a list of images into the a list in class, so that we can use the list element directly. Type 'image literal', then press 'enter', we can select images directly.
+<br>
 
 
