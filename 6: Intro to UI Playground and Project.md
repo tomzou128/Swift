@@ -65,7 +65,7 @@ public class GameViewController: UIViewController {
 ```
 
 
-# 6.6: Intro to Xcode project with UI
+# Intro to Xcode project with UI
 
 ## 1. Setup a Xcode project
 1. Choose 'ios', 'single view', and 'story board' as the user interface. <br>
