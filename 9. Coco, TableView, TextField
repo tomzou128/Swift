@@ -1,3 +1,6 @@
+# Coco, TableView, TextView 
+Include: Use of cocoapods, Button, TableView, TextField and Project: 入画
+
 ## Use cocoapods to import fave button to our project
 1. Open terminal and go to your current project directory.<br>
 2. Input: ```pod init```, later you will see a file called 'Podfile' in the directory.<br>
