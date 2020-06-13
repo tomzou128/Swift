@@ -1,5 +1,20 @@
 # 6: Intro to Xcode Project with UI
 
+## Storyboard tips
+### Auto-layout
+Make use of Auto-layout. Put objects which are in the same category into a stack view. The key part is to have use layer concept to building the whole thing.
+<br>
+
+### Button tips
+When we want to create a button with an image, we sometimes create a view and put both an image and a button in it. Then set the image to be on top of the button. We don't prefer using the background image of button because the size of image may not fit the size of button we want (e.g. we want the button to be larger than the image). So it is better to separate them.
+<br><br>
+
+## Image tips
+We can put a list of images into the a list in class, so that we can use the list element directly. Type 'image literal', then press 'enter', we can select images directly.
+<br><br>
+
+
+
 ## Playground: Define a layout
 
 ```swift
@@ -39,17 +54,6 @@ public class GameViewController: UIViewController {
     
 }
 ```
-
-## Storyboard tips
-Make use of Auto-layout. Put objects which are in the same category into a stack view. The key part is to have use layer concept to building the whole thing.
-
-<br>
-
-## Image tips
-We can put a list of images into the a list in class, so that we can use the list element directly. Type 'image literal', then press 'enter', we can select images directly.
-<br>
-
-
 
 ## Xcode project: journey to the West
 
