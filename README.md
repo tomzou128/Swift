@@ -1,5 +1,4 @@
 # Swift
-New to github
 
 Learned from 
 * 《Swift 创新导论》 in MOOC
